@@ -8,8 +8,5 @@
   },
   "author": "Aditya Gurjar",
   "license": "ISC"
-  "repository": {
-  "type": "git",
-  "url": "git://github.com/eminemoholic/vDroneWeb.git"
-}
+  
 }
