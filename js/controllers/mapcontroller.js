@@ -1,7 +1,7 @@
 
 
 
-  app.controller('mapController',  function($scope) {
+  app.controller('mapController',  function($scope,$http) {
     var vm = this;
     var pilots = [
                   {
@@ -38,11 +38,11 @@
 
           url: '/location';
 
-      }).then(function mySucces(response) {
+      }).then(function successCallback(response) {
 
           pilots = response.data;
 
-      }, function myError(response) {
+      }, function errorCallback(response) {
 
           $scope.location = response.statusText;
 

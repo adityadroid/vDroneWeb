@@ -135,58 +135,58 @@
                             <div layout-gt-sm="row">
                                 <md-input-container class="md-block" flex-gt-sm>
                                     <label>First name</label>
-                                    <input ng-model="user.firstName">
+                                    <input ng-model="scan.user.firstname">
                                 </md-input-container>
 
                                 <md-input-container class="md-block" flex-gt-sm>
                                     <label>Last Name </label>
-                                    <input ng-model="theMax">
+                                    <input ng-model="scan.user.lastname">
                                 </md-input-container>
                             </div>
 
                             <div layout-gt-sm="row">
                                 <md-input-container class="md-block" flex-gt-sm>
                                     <label>Address</label>
-                                    <input ng-model="user.firstName">
+                                    <input ng-model="scan.user.address">
                                 </md-input-container>
 
                                 <md-input-container class="md-block" flex-gt-sm>
                                     <label>Village</label>
-                                    <input ng-model="theMax">
+                                    <input ng-model="scan.user.village">
                                 </md-input-container>
                             </div>
 
                             <div layout-gt-sm="row">
                                 <md-input-container class="md-block" flex-gt-sm>
-                                    <label>Taluk</label>
-                                    <input ng-model="user.firstName">
+                                    <label>Taluka</label>
+                                    <input ng-model="scan.user.taluka">
                                 </md-input-container>
                                 <div layout="row" layout-align="space-between center" flex-gt-sm>
                                     <span>What is your crop type?</span>
-                                    <md-select ng-model="weapon" placeholder="Weapon" class="md-no-underline">
-                                        <md-option value="axe">Kharif</md-option>
-                                        <md-option value="sword">Rabi</md-option>
-                                        <md-option value="wand">Monsoon</md-option>
-                                        <md-option value="pen">Winter</md-option>
+                                    <md-select ng-model="scan.user.season" placeholder="Season" class="md-no-underline">
+                                        <md-option value="Kharif">Kharif</md-option>
+                                        <md-option value="Rabi">Rabi</md-option>
+                                        <md-option value="Monsoon">Monsoon</md-option>
+                                        <md-option value="Winter">Winter</md-option>
                                     </md-select>
                                 </div>
                             </div>
                             <div layout-gt-sm="row">
                                 <md-input-container class="md-block" flex-gt-sm>
                                     <label>Farm Size</label>
-                                    <input ng-model="user.firstName">
+                                    <input ng-model="scan.user.farm_size">
                                 </md-input-container>
 
                                 <md-input-container class="md-block" flex-gt-sm>
                                     <label>Contact Info</label>
-                                    <input ng-model="theMax">
+                                    <input ng-model="scan.user.contact_no">
                                 </md-input-container>
                             </div>
 
                         </md-card-content>
 
                         <md-card-actions layout="row" layout-sm="column" layout-align="end center" layout-wrap>
-                                 <md-button class="md-raised md-primary">ADD</md-button>
+                                 <md-button class="md-raised md-primary" ng-click="scan.addScanDetails()" >ADD</md-button>
                                </md-card-actions>
                     </md-card>
 

@@ -1,5 +1,5 @@
 
-  app.controller('loginController', function($scope) {
+  app.controller('loginController', function($scope,$http) {
       var vm = this;
       $scope.showLogin = false;
       $scope.user = {
